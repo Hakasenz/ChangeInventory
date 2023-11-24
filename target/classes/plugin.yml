@@ -1,0 +1,9 @@
+name: changeinventory
+version: '1.0-SNAPSHOT'
+main: hakasenz.herteffect.ChangeInventory
+api-version: 1.20
+commands:
+  ChangeInventory:
+    usage: /changeinventory
+  ChangeInventoryBuff:
+    usage: /changeinventoryBuff

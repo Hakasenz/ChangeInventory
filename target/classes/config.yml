@@ -1,0 +1,695 @@
+#默认只有一个指令:hearteffect
+#默认权限:hearteffect.reload
+#音效还没做,不生效
+SoundName: ENTITY_PLAYER_LEVELUP
+#提示: 以下每一段是分别独立的,但有可能会被第一个不带有前缀的所覆盖
+#有些选项不建议开启,可能会很卡
+#目前仅对玩家有效
+#====================================================================================
+#                                   默认造成的伤害事件(怪物攻击到玩家)
+#这个选项启用后才会执行
+EntityAttackbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+EntityAttacksound: ENTITY_WITHER_SHOOT #ENTITY_PLAYER_LEVELUP
+#击中后,以受击者为半径多少格内会听到声音
+EntityAttackRadius: 5
+#声音大小 范围是(0.1-1.0)
+EntityAttackV: 1.0
+#声音音阶 范围是(1.0-0.0)
+EntityAttackVh: 1.0
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+ParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+ClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+PlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+PlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+PlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+Amount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+Speed: 1
+#====================================================================================
+#                                   方块爆炸造成的伤害事件
+#这个选项启用后才会执行
+BlockExplodebutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+BlockExplodesound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+BlockExplodeRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+BlockExplodeParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+BlockExplodeClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+BlockExplodePlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+BlockExplodePlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+BlockExplodePlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+BlockExplodeAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+BlockExplodeSpeed: 1
+#====================================================================================
+#                                   方块掉落造成的伤害事件
+#这个选项启用后才会执行
+BlockFallingbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+BlockFallingsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+BlockFallingtRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+BlockFallingParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+BlockFallingClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+BlockFallingPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+BlockFallingPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+BlockFallingPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+BlockFallingAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+BlockFallingSpeed: 1
+#====================================================================================
+#                                   接触造成的伤害事件(仙人掌)
+#这个选项启用后才会执行
+Contactbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Contactsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+ContactRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+ContactParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+ContactClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+ContactPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+ContactPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+ContactPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+ContactAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+ContactSpeed: 1
+#====================================================================================
+#                                   挤压造成的伤害事件
+#这个选项启用后才会执行
+Crammingbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Crammingsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+CrammingRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+CrammingParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+CrammingClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+CrammingPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+CrammingPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+CrammingPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+CrammingAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+CrammingSpeed: 1
+#====================================================================================
+#                                   自定义造成的伤害事件(不明)[可能是其他插件干涉并重写的伤害事件]
+#这个选项启用后才会执行
+Custombutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Custosound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+CustoRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+CustomParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+CustomClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+CustomPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+CustomPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+CustomPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+CustomAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+CustomSpeed: 1
+#====================================================================================#
+#                                   龙息造成的伤害事件
+#这个选项启用后才会执行
+DragonBreathbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+DragonBreathsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+DragonBreathRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+DragonBreathParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+DragonBreathClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+DragonBreathPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+DragonBreathPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+DragonBreathPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+DragonBreathAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+DragonBreathSpeed: 1
+#====================================================================================
+#                                   溺水造成的伤害事件
+#这个选项启用后才会执行
+Drowingbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Drowingsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+DrowingRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+DrowingParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+DrowingClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+DrowingPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+DrowingPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+DrowingPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+DrowingAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+DrowingSpeed: 1
+#====================================================================================
+#                                   生物爆炸造成的伤害事件
+#这个选项启用后才会执行
+EntityExplodebutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+EntityExplodesound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+EntityExplodeRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+EntityExplodeParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+EntityExplodeClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+EntityExplodePlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+EntityExplodePlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+EntityExplodePlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+EntityExplodeAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+EntityExplodeSpeed: 1
+#====================================================================================
+#                                   横扫造成的伤害事件
+#这个选项启用后才会执行
+EntitySweepAttackbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+EntitySweepAttacksound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+EntitySweepAttackRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+EntitySweepAttackParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+EntitySweepAttackClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+EntitySweepAttackPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+EntitySweepAttackPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+EntitySweepAttackPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+EntitySweepAttackAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+EntitySweepAttackSpeed: 1
+#====================================================================================
+#                                   摔伤造成的伤害事件
+#这个选项启用后才会执行
+Falldownbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Falldownsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+FalldownRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+FalldownParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+FalldownClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+FalldownPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+FalldownPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+FalldownPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+FalldownAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+FalldownSpeed: 1
+#====================================================================================
+#                                   站在火上造成的伤害事件
+#这个选项启用后才会执行
+Firebutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Firesound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+FireRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+FireParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+FireClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+FirePlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+FirePlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+FirePlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+FireAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+FireSpeed: 1
+#====================================================================================
+#                                   火焰持续灼烧造成的伤害事件
+#这个选项启用后才会执行
+FireTickbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+FireTicksound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+FireTickRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+FireTickParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+FireTickClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+FireTickPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+FireTickPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+FireTickPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+FireTickAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+FireTickSpeed: 1
+#====================================================================================
+#                                   鞘翅撞墙造成的伤害事件
+#这个选项启用后才会执行
+FlyIntoWallbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+FlyIntoWallsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+FlyIntoWallRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+FlyIntoWallParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+FlyIntoWallClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+FlyIntoWallPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+FlyIntoWallPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+FlyIntoWallPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+FlyIntoWallAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+FlyIntoWallSpeed: 1
+#====================================================================================
+#                                   冰冻造成的伤害事件
+#这个选项启用后才会执行
+Freezebutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Freezesound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+FreezeRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+FreezeParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+FreezeClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+FreezePlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+FreezePlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+FreezePlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+FreezeAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+FreezeSpeed: 1
+#====================================================================================
+#                                   岩浆块造成的伤害事件
+#这个选项启用后才会执行
+hot_floorbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+hot_floorsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+hot_floorRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+hot_floorParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+hot_floorClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+hot_floorPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+hot_floorPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+hot_floorPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+hot_floorAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+hot_floorSpeed: 1
+#====================================================================================
+#                                   kill命令造成的伤害事件
+#这个选项启用后才会执行
+Killbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Killsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+KillRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+KillParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+KillClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+KillPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+KillPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+KillPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+KillAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+KillSpeed: 1
+#====================================================================================
+#                                   岩浆造成的伤害事件
+#这个选项启用后才会执行
+Lavabutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Lavasound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+LavaRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+LavaParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+LavaClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+LavaPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+LavaPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+LavaPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+LavaAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+LavaSpeed: 1
+#====================================================================================
+#                                   闪电造成的伤害事件
+#这个选项启用后才会执行
+Lightningbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Lightningsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+LightningRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+LightningParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+LightningClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+LightningPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+LightningPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+LightningPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+LightningAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+LightningSpeed: 1
+#====================================================================================
+#                                   魔法造成的伤害事件
+#这个选项启用后才会执行
+Magicbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Magicsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+MagicRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+MagicParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+MagicClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+MagicPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+MagicPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+MagicPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+MagicAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+MagicSpeed: 1
+#====================================================================================
+#                                   融化造成的伤害事件(不明)
+#这个选项启用后才会执行
+Meltingbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Meltingsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+MeltingRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+MeltingParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+MeltingClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+MeltingPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+MeltingPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+MeltingPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+MeltingAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+MeltingSpeed: 1
+#====================================================================================
+#                                   中毒造成的伤害事件
+#这个选项启用后才会执行
+Poisonbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Poisonsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+PoisonRadius: 5
+#声音大小 范围是(0.1-1.0)
+PoisonV: 1.0
+#声音音阶 范围是(1.0-0.0)
+PoisonVh: 1.0
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+PoisonParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+PoisonClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+PoisonPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+PoisonPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+PoisonPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+PoisonAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+PoisonSpeed: 1
+#====================================================================================
+#                                   抛射物造成的伤害事件
+#这个选项启用后才会执行
+Projectilebutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Projectilesound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+ProjectileRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+ProjectileParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+ProjectileClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+ProjectilePlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+ProjectilePlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+ProjectilePlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+ProjectileAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+ProjectileSpeed: 1
+#====================================================================================
+#                                  监守者音波造成的伤害事件
+#这个选项启用后才会执行
+Sonicbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Sonicsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+SonicRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+SonicBoomParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+SonicBoomClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+SonicBoomPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+SonicBoomPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+SonicBoomPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+SonicBoomAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+SonicBoomSpeed: 1
+#====================================================================================
+#                                   饥饿造成的伤害事件
+#这个选项启用后才会执行
+Starvationbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Starvationsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+StarvationRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+StarvationParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+StarvationClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+StarvationPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+StarvationPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+StarvationPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+StarvationAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+StarvationSpeed: 1
+#====================================================================================
+#                                   窒息造成的伤害事件
+#这个选项启用后才会执行
+Suffocationbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Suffocationsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+SuffocationRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+SuffocationParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+SuffocationClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+SuffocationPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+SuffocationPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+SuffocationPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+SuffocationAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+SuffocationSpeed: 1
+#====================================================================================
+#                                   玩家自杀命令
+#这个选项启用后才会执行
+Suicidebutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Suicidesound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+SuicideRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+SuicideParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+SuicideClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+SuicidePlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+SuicidePlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+SuicidePlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+SuicideAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+SuicideSpeed: 1
+#====================================================================================
+#                                   荆棘造成的伤害事件
+#这个选项启用后才会执行
+Thornsbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Thornssound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+ThornsRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+ThornsParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+ThornsClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+ThornsPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+ThornsPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+ThornsPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+ThornsAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+ThornsSpeed: 1
+#====================================================================================
+#                                   虚空造成的伤害事件
+#这个选项启用后才会执行
+Voidbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Voidsound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+VoidRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+VoidParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+VoidClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+VoidPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+VoidPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+VoidPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+VoidAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+VoidSpeed: 1
+#====================================================================================
+#                                   凋零造成的伤害事件
+#这个选项启用后才会执行
+Witherbutton: true
+#击中后,以受击者为半径多少格内会听到的声音
+Withersound: ENTITY_WITHER_SHOOT
+#击中后,以受击者为半径多少格内会听到声音
+WitherRadius: 5
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+WitherParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+WitherClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+WitherPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+WitherPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+WitherPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+WitherAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+WitherSpeed: 1
+#====================================================================================
+#                                   屏障造成的伤害事件
+#这个选项启用后才会执行
+WorldBorderbutton: true
+#使用bukkit中的方块名才能生效,默认是红石块碎片
+WorldBorderParticleType: REDSTONE_BLOCK
+#粒子出现的时间,默认20,不建议低于20 单位是刻(tick)
+WorldBorderClearTime: 20
+#粒子播放的X轴偏移 (失效或者不填时默认为0.5) double类型
+WorldBorderPlayX: 0.5
+#粒子播放的Y轴偏移 (失效或者不填时默认为0.5) double类型
+WorldBorderPlayY: 0.5
+#粒子播放的Z轴偏移 (失效或者不填时默认为0.5) double类型
+WorldBorderPlayZ: 0.5
+#粒子的数量 (失效或者不填时默认为10) int类型
+WorldBorderAmount: 10
+#粒子的速度 (失效或者不填时默认为1) int类型
+WorldBorderSpeed: 1
+#====================================================================================
+
